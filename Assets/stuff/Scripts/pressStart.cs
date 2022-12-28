@@ -12,9 +12,9 @@ public class pressStart : MonoBehaviour
         info.SetActive(false);
     }
 
-    public void PressStart(int index)
+    public void PressStart()
     {
-        SceneManager.LoadScene(index);
+        SceneManager.LoadScene(1);
     }
     public void PressQuit()
     {

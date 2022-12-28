@@ -30,6 +30,7 @@ public class Player_fox : MonoBehaviour
     [SerializeField] Text _hp;
 
     public static int index = 1;
+    public static int s;
 
     bool isHurt = false;
     public GameObject FX;
@@ -149,6 +150,7 @@ public class Player_fox : MonoBehaviour
         if(collision.tag == "Objective")
         {
             index += 1;
+            s = index;
             FindObjectOfType<LevelManager>().Next(index);
             
         }
@@ -220,6 +222,7 @@ public class Player_fox : MonoBehaviour
         {
             FindObjectOfType<LevelManager>().Restart();
             hp = max_hp;
+            index = s;
         }
     }
     private IEnumerator SetHurt()
