@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ca24f2cc-74ea-4273-9713-60a857a5858a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Assets/Scenes.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Assets/Scenes/demo.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Space Shooter Assets/Scenes/demo.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/stuff/Scripts/Player_fox.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/stuff/Scripts/Player_fox.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
-    </list>
+    <list default="true" id="ca24f2cc-74ea-4273-9713-60a857a5858a" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,17 +13,17 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/stuff/Scripts/pressStart.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="124">
-              <caret line="14" column="22" lean-forward="true" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+            <state relative-caret-position="184">
+              <caret line="18" column="27" lean-forward="true" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
               <folding>
-                <marker date="1670841130998" expanded="false" signature="6:113" ph="..." />
-                <marker date="1670841130998" expanded="true" signature="154:723" ph="{...}" />
-                <marker date="1670841130998" expanded="true" signature="241:284" ph="{...}" />
-                <marker date="1670841130998" expanded="true" signature="323:374" ph="{...}" />
-                <marker date="1670841130998" expanded="true" signature="402:442" ph="{...}" />
-                <marker date="1670841130998" expanded="true" signature="465:542" ph="{...}" />
-                <marker date="1670841130998" expanded="true" signature="565:642" ph="{...}" />
-                <marker date="1670841130998" expanded="true" signature="669:721" ph="{...}" />
+                <marker date="1672229778432" expanded="false" signature="6:113" ph="..." />
+                <marker date="1672229778432" expanded="true" signature="154:710" ph="{...}" />
+                <marker date="1672229778432" expanded="true" signature="241:284" ph="{...}" />
+                <marker date="1672229778432" expanded="true" signature="314:361" ph="{...}" />
+                <marker date="1672229778432" expanded="true" signature="389:429" ph="{...}" />
+                <marker date="1672229778432" expanded="true" signature="452:529" ph="{...}" />
+                <marker date="1672229778432" expanded="true" signature="552:629" ph="{...}" />
+                <marker date="1672229778432" expanded="true" signature="656:708" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -95,6 +89,7 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Assets/stuff/Scripts/Player_fox.cs" />
+        <option value="$PROJECT_DIR$/Assets/stuff/Scripts/pressStart.cs" />
       </list>
     </option>
   </component>
@@ -174,12 +169,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1672229373779</updated>
-      <workItem from="1672229382321" duration="342000" />
+      <workItem from="1672229382321" duration="988000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="342000" />
+    <option name="totallyTimeSpent" value="988000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -282,17 +277,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/stuff/Scripts/pressStart.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="14" column="22" lean-forward="true" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+        <state relative-caret-position="184">
+          <caret line="18" column="27" lean-forward="true" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
           <folding>
-            <marker date="1670841130998" expanded="false" signature="6:113" ph="..." />
-            <marker date="1670841130998" expanded="true" signature="154:723" ph="{...}" />
-            <marker date="1670841130998" expanded="true" signature="241:284" ph="{...}" />
-            <marker date="1670841130998" expanded="true" signature="323:374" ph="{...}" />
-            <marker date="1670841130998" expanded="true" signature="402:442" ph="{...}" />
-            <marker date="1670841130998" expanded="true" signature="465:542" ph="{...}" />
-            <marker date="1670841130998" expanded="true" signature="565:642" ph="{...}" />
-            <marker date="1670841130998" expanded="true" signature="669:721" ph="{...}" />
+            <marker date="1672229778432" expanded="false" signature="6:113" ph="..." />
+            <marker date="1672229778432" expanded="true" signature="154:710" ph="{...}" />
+            <marker date="1672229778432" expanded="true" signature="241:284" ph="{...}" />
+            <marker date="1672229778432" expanded="true" signature="314:361" ph="{...}" />
+            <marker date="1672229778432" expanded="true" signature="389:429" ph="{...}" />
+            <marker date="1672229778432" expanded="true" signature="452:529" ph="{...}" />
+            <marker date="1672229778432" expanded="true" signature="552:629" ph="{...}" />
+            <marker date="1672229778432" expanded="true" signature="656:708" ph="{...}" />
           </folding>
         </state>
       </provider>

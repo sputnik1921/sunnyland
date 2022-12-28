@@ -249,7 +249,9 @@
             <e p="shoot" t="Include" />
             <e p="Sound FX" t="Include" />
           </e>
-          <e p="Scenes" t="Include" />
+        </e>
+        <e p="StreamingAssets" t="Include">
+          <e p="UnityServicesProjectConfiguration.json" t="Include" />
         </e>
         <e p="stuff" t="Include">
           <e p="Prefabs" t="Include">
