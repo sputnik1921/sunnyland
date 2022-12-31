@@ -7,6 +7,7 @@ public class EnemyPotassum : MonoBehaviour
     public Transform[] patrolpoints;
     public float moveSpeed;
     public int patrolDestination;
+    private Rigidbody2D _rb;
 
     public Transform playerTransform;
     public bool isChasing;
@@ -14,7 +15,7 @@ public class EnemyPotassum : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        _rb = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame

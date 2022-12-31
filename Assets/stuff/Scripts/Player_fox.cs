@@ -23,6 +23,8 @@ public class Player_fox : MonoBehaviour
     public static int point = 0;
     public static int max_hp = 2;
     public static int hp = 2;
+    public int _point = 0;
+    public int _gem = 0;
     public static int gem = 0;
     [SerializeField] private Text pointText;
     [SerializeField] float hurtForce = 10f;
@@ -137,20 +139,22 @@ public class Player_fox : MonoBehaviour
         if (collision.tag == "Collectible")
         {
             Destroy(collision.gameObject);
-            point += 1;
+            _point += 1;
             fxSetup();
         }
         if (collision.tag == "HP")
         {
             Destroy(collision.gameObject);
-            gem += 1;
-            HPModifier();
+            _gem += 1;
             fxSetup();
         }
         if(collision.tag == "Objective")
         {
             index += 1;
             s = index;
+            point += _point;
+            gem += _gem;
+            HPModifier();
             FindObjectOfType<LevelManager>().Next(index);
             
         }
@@ -175,11 +179,11 @@ public class Player_fox : MonoBehaviour
     void HPUpdate()
     {
         HP.text = String.Format("HP:    {0}", hp);
-        _hp.text = String.Format("GEMS:  {0}", gem);
+        _hp.text = String.Format("GEMS:  {0}", gem+_gem);
     }
     void pointUpdate()
     {
-        pointText.text = string.Format("POINTS:   {0}", point);
+        pointText.text = string.Format("POINTS:   {0}", point+_point);
     }
     public void OnCollisionEnter2D(Collision2D collision)
     {
@@ -189,7 +193,7 @@ public class Player_fox : MonoBehaviour
             {
                 Destroy(collision.gameObject);
                 _rb.AddForce(Vector2.up * p_force, ForceMode2D.Impulse);
-                point += 5;
+                _point += 5;
                 Collect.Play();
             }
             else
