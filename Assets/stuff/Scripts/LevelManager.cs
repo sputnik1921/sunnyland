@@ -19,6 +19,9 @@ public class LevelManager : MonoBehaviour
                 SceneManager.LoadScene("Lv2");
                 break;
             case 3:
+                SceneManager.LoadScene("Lv3");
+                break;
+            case 4:
                 SceneManager.LoadScene("End");
                 break;
         }

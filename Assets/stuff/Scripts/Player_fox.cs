@@ -23,6 +23,7 @@ public class Player_fox : MonoBehaviour
     public static int point = 0;
     public static int max_hp = 2;
     public static int hp = 2;
+    public int thp;
     public int _point = 0;
     public int _gem = 0;
     public static int gem = 0;
@@ -50,7 +51,7 @@ public class Player_fox : MonoBehaviour
         _rb = this.GetComponent<Rigidbody2D>();
         //_colli = this.GetComponent<BoxCollider2D>();
         animator = gameObject.GetComponent<Animator>();
-        
+        thp = hp;
         HPUpdate();
         pointUpdate();
     }
@@ -146,6 +147,7 @@ public class Player_fox : MonoBehaviour
         {
             Destroy(collision.gameObject);
             _gem += 1;
+            HPModifier();
             fxSetup();
         }
         if(collision.tag == "Objective")
@@ -156,7 +158,7 @@ public class Player_fox : MonoBehaviour
             gem += _gem;
             HPModifier();
             FindObjectOfType<LevelManager>().Next(index);
-            
+            thp = max_hp;
         }
 
     }
@@ -169,9 +171,10 @@ public class Player_fox : MonoBehaviour
     }
     void HPModifier()
     {
-        if (gem == 2)
+        if (gem == 2|| gem+_gem ==2||_gem==2)
         {
             gem =0;
+            _gem = 0;
             hp += 1;
             max_hp += 1;
         }
@@ -225,7 +228,7 @@ public class Player_fox : MonoBehaviour
         if (hp <= 0)
         {
             FindObjectOfType<LevelManager>().Restart();
-            hp = max_hp;
+            hp = thp;
             index = s;
         }
     }
